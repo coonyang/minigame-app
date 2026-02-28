@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import MiniGamePage from "./pages/MiniGamePage.jsx";
 import "./App.css";
+import { Watermelongame } from "./games/Watermelongame";
+import GameCanvas from "./games/Stackinggame.jsx";
 
 function App() {
   return (
@@ -25,7 +27,10 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
 
-        <Route path="/minigame" element={<MiniGamePage />}></Route>
+        <Route path="/minigame" element={<MiniGamePage />}>
+          <Route path="수박게임" element={<Watermelongame />} />
+          <Route path="새알심쌓기" element={<GameCanvas />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
