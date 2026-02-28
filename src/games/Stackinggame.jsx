@@ -236,4 +236,4 @@ export const Stackinggame = () => {
   );
 };
 
-export default GameCanvas;
+export default Stackinggame;

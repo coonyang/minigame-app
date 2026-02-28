@@ -3,7 +3,7 @@ import MainPage from "./pages/MainPage";
 import MiniGamePage from "./pages/MiniGamePage.jsx";
 import "./App.css";
 import { Watermelongame } from "./games/Watermelongame";
-import GameCanvas from "./games/Stackinggame.jsx";
+import Stackinggame from "./games/Stackinggame";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
 
         <Route path="/minigame" element={<MiniGamePage />}>
           <Route path="수박게임" element={<Watermelongame />} />
-          <Route path="새알심쌓기" element={<GameCanvas />} />
+          <Route path="새알심쌓기" element={<Stackinggame />} />
         </Route>
       </Routes>
     </BrowserRouter>
