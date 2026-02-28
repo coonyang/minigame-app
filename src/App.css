@@ -72,3 +72,58 @@ body {
   background-color: #ffcf66;
   transform: scale(1.05);
 }
+
+/* 미니게임 페이지 레이아웃 */
+.minigame-container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.minigame-title {
+  color: #e6b143;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* 네비게이션 및 버튼 */
+.minigame-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.game-link {
+  padding: 15px 30px;
+  background-color: #2a2a2a;
+  color: #e6b143;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.game-link:hover {
+  background-color: #e6b143;
+  color: #000;
+  border-color: #ffcf66;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(230, 177, 67, 0.3);
+}
+
+/* 구분선 */
+.minigame-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #444, transparent);
+  margin: 30px 0;
+}
+
+/* 게임이 표시되는 영역 */
+.game-viewport {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
