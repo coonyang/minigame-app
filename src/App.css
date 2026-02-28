@@ -127,3 +127,39 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* 게임 설명서 플로팅 버튼 */
+.guide-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #e6b143 0%, #ffcf66 100%);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(230, 177, 67, 0.4);
+  transition: all 0.3s ease;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guide-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(230, 177, 67, 0.6);
+  background: linear-gradient(135deg, #ffcf66 0%, #e6b143 100%);
+}
+
+.guide-button:active {
+  transform: translateY(0);
+}
+
+/* 버튼 내 아이콘 느낌 추가 (선택사항) */
+.guide-button::before {
+  font-size: 1.1rem;
+}

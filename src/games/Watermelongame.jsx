@@ -235,15 +235,7 @@ export function Watermelongame() {
       }}
     >
       <h2>명조 수박 게임</h2>
-      <button
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          border: "none",
-        }}
-        onClick={() => set설명서(true)}
-      >
+      <button className="guide-button" onClick={() => set설명서(true)}>
         게임 설명서
       </button>
 

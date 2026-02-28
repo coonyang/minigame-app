@@ -193,15 +193,7 @@ export const Stackinggame = () => {
           다시하기
         </button>
       )}
-      <button
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          border: "none",
-        }}
-        onClick={() => set설명서(true)}
-      >
+      <button className="guide-button" onClick={() => set설명서(true)}>
         게임 설명서
       </button>
       {설명서 && (
