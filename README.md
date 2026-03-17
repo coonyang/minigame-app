@@ -1,16 +1,12 @@
-# React + Vite
+1. 프로젝트 요약
+- 목표
+   1. 특정 게임(명조)의 오프라인 이벤트 행사에만 있던 게임 구현
+   2. 한때 유행했던 수박게임의 명조 버전 게임 구현
+- 핵심 기능
+   1. HTML5 Canvas로 게임의 그래픽을 실시간으로 그림
+   2. react-router-dom을 이용한 페이지 나누기
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 안내
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+본 프로젝트는 비상업적 팬 프로젝트입니다.  
+게임 관련 이미지 및 리소스의 저작권은 각 권리자에게 있습니다.
