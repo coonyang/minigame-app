@@ -80,7 +80,7 @@ export const Stackinggame = () => {
         let newY = currentEgg.y + 4;
         let landed = false;
 
-        if (eggs.length === 0 && newY + eggHeight >= canvasHeight) {
+        if (eggs.length === 0 && newY + eggHeight >= canvasHeight - 82) {
           landed = true;
         } else if (eggs.length > 0) {
           const topEgg = eggs[eggs.length - 1];
@@ -175,7 +175,10 @@ export const Stackinggame = () => {
         height={canvasHeight}
         style={{
           border: "1px solid white",
-          backgroundColor: "#E6B143",
+          backgroundImage: "url('/img/새알심/game_bg.png')",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           display: "block",
           margin: "20px auto",
         }}
