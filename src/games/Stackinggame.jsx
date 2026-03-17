@@ -168,7 +168,7 @@ export const Stackinggame = () => {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ position: "relative", textAlign: "center" }}>
       <canvas
         ref={canvasRef}
         width={canvasWidth}
@@ -181,15 +181,7 @@ export const Stackinggame = () => {
         }}
       />
       {gameState !== "playing" && (
-        <button
-          onClick={handleRestart}
-          style={{
-            marginTop: "20px",
-            padding: "10px 20px",
-            fontSize: "16px",
-            cursor: "pointer",
-          }}
-        >
+        <button onClick={handleRestart} className="gameover-btn">
           다시하기
         </button>
       )}
@@ -197,23 +189,7 @@ export const Stackinggame = () => {
         게임 설명서
       </button>
       {설명서 && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "rgba(0,0,0,0.7)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 9999,
-            color: "white",
-            textAlign: "left",
-          }}
-          onClick={() => set설명서(false)}
-        >
+        <div className="overlay" onClick={() => set설명서(false)}>
           <div>
             <h3>새알심 게임 설명서</h3>
             <p>스페이스를 눌러 새알심을 떨어뜨리세요.</p>

@@ -73,6 +73,15 @@ body {
   transform: scale(1.05);
 }
 
+.minigame-logo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e6b143;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
 /* 미니게임 페이지 레이아웃 */
 .minigame-container {
   text-align: center;
@@ -162,4 +171,31 @@ body {
 /* 버튼 내 아이콘 느낌 추가 (선택사항) */
 .guide-button::before {
   font-size: 1.1rem;
+}
+
+/* 설명서 ui */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  text-align: left;
+}
+
+.gameover-btn {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
