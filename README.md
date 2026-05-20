@@ -1,4 +1,4 @@
-배포 주소 : minigame-app-mu.vercel.app
+배포 주소 : [ minigame-app-mu.vercel.app](https://minigame-app-mu.vercel.app/)
 
 프로젝트 요약
 - 목표
